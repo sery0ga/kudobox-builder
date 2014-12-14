@@ -1,0 +1,110 @@
+
+/* Fonts for cards */
+@font-face {
+  font-family: 'festus';
+  src: url('fonts/festus.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'handyboldcyr';
+  src: url('fonts/handyboldcyr.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'marckscript';
+  src: url('fonts/marckscript.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body {
+  text-align: center;
+  margin: 0 auto;
+  background-color: #468AC2;
+}
+
+/* Type card */
+
+.festus {
+  font-family: 'festus', 'Arial';
+}
+
+.handyboldcyr {
+  font-family: 'handyboldcyr', 'Arial';
+}
+
+.marckscript {
+  font-family: 'marckscript', 'Arial';
+}
+
+.kudo_preloader {
+  margin: 180px auto;
+}
+
+.kudo_card {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  line-height: 130%;
+  width: 100%;
+  outline: 0;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.kudo_preloader {
+  width: 60px;
+  height: 50px;
+  text-align: center;
+
+  > div {
+    background-color: #fff;
+    height: 100%;
+    width: 8px;
+    display: inline-block;
+
+    -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+    animation: stretchdelay 1.2s infinite ease-in-out;
+  }
+
+  .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+  }
+
+  .rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+
+  .rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+  }
+
+  .rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+  }
+
+}
+
+@-webkit-keyframes stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }
+  20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes stretchdelay {
+  0%, 40%, 100% {
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% {
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
+

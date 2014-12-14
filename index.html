@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+    <title>Kudobox</title>
+    <script src="javascripts/vendor/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="javascripts/vendor/jquery-textrange.js" type="text/javascript" charset="utf-8"></script>
+    <script src="javascripts/vendor/eventemitter.js" type="text/javascript" charset="utf-8"></script>
+    <script src="javascripts/util.js" type="text/javascript" charset="utf-8"></script>
+    <script src="javascripts/builder/drawer.js" type="text/javascript" charset="utf-8"></script>
+    <script src="javascripts/builder/drawer-web.js" type="text/javascript" charset="utf-8"></script>
+    <script src="javascripts/builder/kudo-data.js" type="text/javascript" charset="utf-8"></script>
+    <script src="javascripts/builder.js" type="text/javascript" charset="utf-8"></script>
+    <script src="javascripts/main.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+      $(function () {
+        // listen to an external app event and initialize a new card on it
+        Ti.App.addEventListener("app:createCard", function(e) {
+          new Create(e);
+        });
+      });
+    </script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="main">
+      <section class="kudo_type_message kudo_section container kudo_resize">
+        <div class="kudo_div">
+          <div id="kudo_img_builder" class="kudo_card">
+              <div class="kudo_preloader">
+                  <div class="rect1"></div>
+                  <div class="rect2"></div>
+                  <div class="rect3"></div>
+                  <div class="rect4"></div>
+                  <div class="rect5"></div>
+              </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
